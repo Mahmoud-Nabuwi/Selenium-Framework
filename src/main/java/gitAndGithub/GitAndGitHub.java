@@ -12,6 +12,9 @@ public class GitAndGitHub {
 // GIT VS GitHub: git is resposible for keeping track of changes 
 // github is a company that provide git repo hosting - has git client for mac and windows
 // never put password - ssh keys - aws access keys - api keys - credit card numbers - pin numbers
+// common commands :
+// git config --global user.email or user.name
+// git log - git -help
 	
 	
 }
