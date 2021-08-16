@@ -86,6 +86,21 @@
 
 
 	</dependencies>
+	<profiles>
+	<profile>
+	<id>regression</id>
+	<activation>
+	<activeByDefault>true</activeByDefault>
+	<property>
+	<name>environment</name>
+	<value>regression</value>
+	</property>
+	</activation>
+	<properties>
+	<testNGSuit>regression.xml</testNGSuit>
+	</properties>
+	</profile>
+	</profiles>
 
 	<build>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
@@ -109,6 +124,11 @@
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.22.1</version>
+					<configuration>
+					<suiteXmlFiles>
+					<suiteXmlFile>${testNGSuit}</suiteXmlFile>
+					</suiteXmlFiles>
+					</configuration>
 				</plugin>
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
