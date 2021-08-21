@@ -7,7 +7,10 @@ import java.util.Properties;
 
 public class ReadProperties {
 // load the properties file 
-	public static Properties userData = loadProperties("C:\\Users\\dod\\eclipse-workspace\\PageObjectModel\\src\\main\\java\\properties\\userdata.properties");
+	public static Properties userData = loadProperties("C:\\Users\\dod\\eclipse-workspace\\PageObjectModel\\Selenium-Framework\\src\\main\\java\\properties\\userdata.properties");
+// load saucelab properties file 
+	public static Properties saucelabData = loadProperties("C:\\Users\\dod\\eclipse-workspace\\PageObjectModel\\Selenium-Framework\\src\\main\\java\\properties\\saucelab.properties");
+
 	
 	private static Properties loadProperties(String path)   {
 		Properties  pro = new Properties();
